@@ -55,6 +55,9 @@ Vagrant.configure("2") do |config|
             sudo mkdir -p /jenkins
             sudo chown vagrant /jenkins
 
+            brew install watchman
+            exit 1
+    
             brew -v
 
             brew tap adoptopenjdk/openjdk
